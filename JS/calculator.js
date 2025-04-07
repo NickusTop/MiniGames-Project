@@ -33,7 +33,7 @@ function calculate() {
   } else if (chf === 3) {
     calP = num1 * num2;
   } else if (chf === 4) {
-    if (num2 === 0) {
+    if (num1 === 0 || num2 === 0) {
       result.textContent = "Ділення на 0 неможливе!";
       return;
     }
