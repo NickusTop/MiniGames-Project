@@ -4,14 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MiniGames</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <h1>Перевір в який рік ти народився</h1>
     <input type="text" id="yearInput" placeholder="Введіть рік народження" />
-    <button id="buttonInput">Проверить</button>
+    <button id="buttonInput">Перевірити</button>
     <p id="result"></p>
+    <p>
+      ------------------------------------------------------------------------------------------
+    </p>
+    <h1>Вгадай число, яке загадав комп’ютер</h1>
     <input type="text" id="numberInput" placeholder="Введіть число" />
-    <button id="guessButton">Угадай число</button>
+    <button id="guessButton">Вгадай число</button>
     <p id="guessResult"></p>
+    <p>
+      ------------------------------------------------------------------------------------------
+    </p>
+    <h1>Камінь - ножиці - папір</h1>
     <button id="stone">Камень</button>
     <button id="scissors">Ножниці</button>
     <button id="paper">Папір</button>
@@ -20,7 +30,10 @@
     <p id="ai-score">Комп’ютер - 0</p>
     <p id="pl-score">Ви - 0</p>
     <p id="stscP">Варіант комп’ютера</p>
-    <p class="cal-p">Калькулятор</p>
+    <p>
+      ------------------------------------------------------------------------------------------
+    </p>
+    <h1 class="cal-p">Калькулятор</h1>
     <input class="cal-in" placeholder="Введіть число" />
     <button class="button-plus">+</button>
     <button class="button-minus">-</button>
@@ -30,22 +43,89 @@
     <button class="button-res">=</button>
     <p class="cal-result"></p>
     <!-- //ffff -->
-    <h1>N5</h1>
+    <h1>Калькулятор часу</h1>
     <input id="input-time" placeholder="ВВЕДИ ВЖЕ ТОЙ ЧАС" type="text" />
+    <p id="p-time">0</p>
     <p>
       ------------------------------------------------------------------------------------------
     </p>
-    <p id="p-time">0</p>
+    <h1>Google динозавр</h1>
     <iframe
       src="https://wayou.github.io/t-rex-runner/"
       width="600"
       height="200"
       style="border: none"
     ></iframe>
+    <p>
+      ------------------------------------------------------------------------------------------
+    </p>
+    <h1>Футбол</h1>
+    <div id="pole"></div>
+    <p>
+      ------------------------------------------------------------------------------------------
+    </p>
+    <h1>Введіть 3 числа</h1>
+    <input id="3n-input" type="text" />
+    <input id="3n-input2" type="text" />
+    <input id="3n-input3" type="text" />
+    <p id="3n-p"></p>
+    <button id="3n-button">Обрати велике число</button>
+    <p>
+      ------------------------------------------------------------------------------------------
+    </p>
+    <h1>Обери вченого/их</h1>
+    <ul class="ul-sc" id="scientist-list"></ul>
+    <ul>
+      <li>
+        <button id="scientist-question">Які вчені народилися в 19 ст.</button>
+      </li>
+      <li>
+        <button id="scientist-question2">
+          Відсортувати вчених за алфавітом
+        </button>
+      </li>
+      <li>
+        <button id="scientist-question3">
+          Відсортувати вчених за кількістю прожитих років
+        </button>
+      </li>
+      <li>
+        <button id="scientist-question4">
+          Знайти вченого, який народився найпізніше
+        </button>
+      </li>
+      <li>
+        <button id="scientist-question5">
+          Знайти рік народження Albert Einstein
+        </button>
+      </li>
+      <li>
+        <button id="scientist-question6">
+          Знайти вчених, прізвища яких починаються на літеру “C”
+        </button>
+      </li>
+      <li>
+        <button id="scientist-question7">
+          Видалити всіх вчених, ім’я яких починається на “A”
+        </button>
+      </li>
+      <li>
+        <button id="scientist-question8">
+          Знайти вченого, який прожив найдовше і вченого, який прожив найменше
+        </button>
+      </li>
+      <li>
+        <button id="scientist-question9">
+          Знайти вчених, в яких співпадають перші літери імені і прізвища
+        </button>
+      </li>
+    </ul>
     <script type="module" src="JS/year.js"></script>
     <script type="module" src="JS/paper.js"></script>
     <script type="module" src="JS/calculator.js"></script>
     <script type="module" src="JS/number-guess.js"></script>
     <script type="module" src="JS/time.js"></script>
+    <script type="module" src="JS/3numbers.js"></script>
+    <script type="module" src="JS/vcheni.js"></script>
   </body>
 </html>
