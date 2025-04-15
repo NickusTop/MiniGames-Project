@@ -85,26 +85,47 @@ const scientists = [
   },
 ];
 const btn = document.getElementById("scientist-question");
+const btn2 = document.getElementById("scientist-question2");
+const btn3 = document.getElementById("scientist-question3");
 const btn4 = document.getElementById("scientist-question4");
 const btn5 = document.getElementById("scientist-question5");
 const btn6 = document.getElementById("scientist-question6");
+const btn7 = document.getElementById("scientist-question7");
 const btn8 = document.getElementById("scientist-question8");
 const btn9 = document.getElementById("scientist-question9");
 
 btn.addEventListener("click", btnScientist);
+btn2.addEventListener("click", btnScientist2);
+btn3.addEventListener("click", btnScientist3);
 btn4.addEventListener("click", btnScientist4);
 btn5.addEventListener("click", btnScientist5);
 btn6.addEventListener("click", btnScientist6);
+btn7.addEventListener("click", btnScientist7);
 btn8.addEventListener("click", btnScientist8);
 btn9.addEventListener("click", btnScientist9);
 
-// Найстарший вчений
 function btnScientist() {
   const zsd = scientists
     .filter((scientist) => scientist.born > 1800 && scientist.born < 1900)
     .sort((a, b) => a.surname.localeCompare(b.surname));
   showScientists(zsd);
 }
+function btnScientist2() {
+  const zsd = scientists.sort((a, b) => a.name.localeCompare(b.name));
+  showScientists(zsd);
+}
+function btnScientist3() {
+  const zsd = scientists
+    .map((scientist) => {
+      return {
+        ...scientist,
+        lived: scientist.dead - scientist.born,
+      };
+    })
+    .sort((a, b) => b.lived - a.lived);
+  showScientists(zsd);
+}
+
 function btnScientist4() {
   const zsd = scientists.sort((a, b) => a.born - b.born);
   showScientists([zsd[zsd.length - 1]]);
@@ -118,6 +139,10 @@ function btnScientist5() {
 }
 function btnScientist6() {
   const zsd = scientists.filter((scientist) => scientist.surname[0] === "C");
+  showScientists(zsd);
+}
+function btnScientist7() {
+  const zsd = scientists.filter((scientist) => scientist.name[0] !== "A");
   showScientists(zsd);
 }
 function btnScientist8() {
