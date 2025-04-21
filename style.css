@@ -13,6 +13,21 @@ body {
 }
 main {
   background: url(back.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.div-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 150px;
+  padding-right: 150px;
+  background-color: white;
+}
+a {
+  text-decoration: none;
 }
 .ul-sc {
   display: grid;
@@ -21,6 +36,11 @@ main {
   column-gap: 60px;
   row-gap: 40px;
   grid-auto-rows: 100px;
+}
+.line {
+  width: 536px;
+  height: 1px;
+  background-color: #000000;
 }
 .list-group-item {
   width: 100px;
@@ -52,4 +72,313 @@ main {
 .div-header {
   width: 100%;
   padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.span-header {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+.a-header {
+  display: flex;
+  color: black;
+  font-size: 12px;
+}
+.a-header:nth-child(3) {
+  margin-right: 50px;
+}
+.a-header:nth-child(4) {
+  margin-right: 250px;
+}
+.svg-header {
+  margin-left: 8px;
+}
+.p-header {
+  font-size: 12px;
+  color: black;
+}
+.name-section {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 36px;
+}
+.p-name {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+.input-div {
+  background-color: #d7d7d7;
+  width: 215px;
+  height: 35px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 10px;
+}
+.inputs {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #7e7e7e;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 12px;
+}
+.buttons {
+  background-color: #000000;
+  border: none;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 35px;
+  height: 35px;
+}
+.buttons:hover {
+  cursor: pointer;
+}
+
+#result {
+  font-size: 12px;
+  margin-left: 145px;
+}
+.results {
+  font-size: 12px;
+  margin-left: 145px;
+}
+.button-sc {
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  background-color: #000000;
+  border: none;
+}
+.button-sc:not(:last-child) {
+  margin-right: 38px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 35px;
+}
+.switch {
+  position: relative;
+  overflow: hidden;
+  width: 2.5rem;
+  height: 1.33rem;
+}
+.logo-header {
+  margin-right: 60px;
+}
+.switch input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+}
+
+.switch label {
+  cursor: pointer;
+}
+
+.background {
+  z-index: 1;
+  position: absolute;
+  width: 2.5rem;
+  height: 1.33rem;
+  border-radius: 0.83rem;
+  border: 0.08rem solid #78c1d5;
+  background: linear-gradient(to right, #78c1d5 0%, #bbe7f5 100%);
+  transition: all 0.3s;
+}
+
+.fill {
+}
+
+.sun-moon {
+  z-index: 2;
+  position: absolute;
+  left: calc(100% - 1.33rem);
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  margin: 0.17rem;
+  background: #f5ec59;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  border: 0.08rem solid #e7c65c;
+  box-shadow: 0 0 3.33px #f5ec59, 0 0 5px #f5ec59, 0 0 6.67px #f5ec59;
+}
+
+.sun-moon .dots {
+  position: absolute;
+  height: 0.5rem;
+  width: 0.5rem;
+  top: 0px;
+  left: -6.67px;
+  background: #ffffff;
+  border: 0.08rem solid #ffffff;
+  border-radius: 50%;
+  transform: rotate(25deg);
+  transition: 0.4s all ease;
+}
+
+.sun-moon .dots:after,
+.sun-moon .dots:before {
+  position: absolute;
+  content: "";
+  display: block;
+  border-radius: 50%;
+  transition: 0.4s all ease;
+  background: #ffffff;
+  border: 0.08rem solid #ffffff;
+}
+
+.sun-moon .dots:after {
+  height: 0.22rem;
+  width: 0.22rem;
+  top: 0.67px;
+  left: -4px;
+}
+
+.sun-moon .dots:before {
+  height: 0.13rem;
+  width: 0.13rem;
+  top: 2px;
+  left: 4.67px;
+}
+
+.stars1,
+.stars2 {
+  position: absolute;
+  height: 0.13rem;
+  width: 0.13rem;
+  background: #ffffff;
+  border-radius: 50%;
+  transition: 0.3s all ease;
+  opacity: 0;
+  transform: translateY(0.67rem);
+}
+
+.stars1 {
+  top: 2px;
+  right: 7.67px;
+}
+
+.stars2 {
+  top: 13.33px;
+  right: 16px;
+}
+
+.stars1:after,
+.stars1:before,
+.stars2:after,
+.stars2:before {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 0.08rem;
+  width: 0.08rem;
+  background: #ffffff;
+  border-radius: 50%;
+  transition: 0.2s all ease;
+}
+
+.stars1:after {
+  top: 2.67px;
+  right: 6.67px;
+}
+
+.stars1:before {
+  top: 6px;
+  right: -4px;
+}
+
+.stars2:after {
+  top: -2.67px;
+  right: -5.33px;
+}
+
+.stars2:before {
+  top: 2px;
+  right: -8.67px;
+}
+
+/* === Toggle to Night Mode === */
+
+.switch input:checked ~ .background {
+  border: 0.08rem solid #202020;
+  background: linear-gradient(to right, #484848 0%, #202020 100%);
+}
+
+.switch input:checked ~ .background .stars1,
+.switch input:checked ~ .background .stars2 {
+  opacity: 1;
+  transform: none;
+}
+
+.switch input:checked ~ .sun-moon {
+  left: 0;
+  background: #fffdf2;
+  border-color: #dee2c6;
+  transform: none;
+  box-shadow: 0 0 3.33px rgba(255, 255, 255, 0.8);
+}
+
+.switch input:checked ~ .sun-moon .dots {
+  top: 1px;
+  left: 7.67px;
+  height: 0.33rem;
+  width: 0.33rem;
+  background: #efeedb;
+  border: 0.08rem solid #dee2c6;
+  transform: none;
+}
+
+.switch input:checked ~ .sun-moon .dots:after {
+  top: -1.33px;
+  left: -8.67px;
+  height: 0.08rem;
+  width: 0.08rem;
+  background: #efeedb;
+  border: 0.08rem solid #dee2c6;
+}
+
+.switch input:checked ~ .sun-moon .dots:before {
+  top: 6px;
+  left: -3.33px;
+  height: 0.08rem;
+  width: 0.08rem;
+  background: #efeedb;
+  border: 0.08rem solid #dee2c6;
+}
+.swiper {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 400px; /* додано для контролю висоти */
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

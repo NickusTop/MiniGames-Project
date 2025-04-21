@@ -15,7 +15,9 @@ function clickButton() {
 
   if ((yearValue % 4 === 0 && yearValue % 100 !== 0) || yearValue % 400 === 0) {
     resultP.textContent = "Ви народилися у високосний рік!";
+    resultP.style.color = "#039900";
   } else {
     resultP.textContent = "Ви народилися не у високосний рік!";
+    resultP.style.color = "#990000";
   }
 }
