@@ -142,7 +142,7 @@ function btnScientist6() {
   showScientists(zsd);
 }
 function btnScientist7() {
-  const zsd = scientists.filter((scientist) => scientist.name[0] !== "A");
+  const zsd = scientists.filter((scientist) => scientist.name[0] === "A");
   showScientists(zsd);
 }
 function btnScientist8() {
