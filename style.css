@@ -158,6 +158,9 @@ a {
 .button-sc:not(:last-child) {
   margin-right: 38px;
 }
+.button-sc:hover {
+  cursor: pointer;
+}
 .container {
   display: flex;
   justify-content: center;

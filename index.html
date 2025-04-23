@@ -137,24 +137,47 @@
           <p class="results" id="guessResult">Нічого не було надруковано!</p>
         </div>
         <div class="line"></div>
-        <p class="p-name">Камінь - ножиці - папір</p>
-        <div style="display: flex">
-          <button class="button-sc" id="stone">
-            <img src="stone.webp" alt="" />
-          </button>
-          <button class="button-sc" id="scissors">
-            <img src="scissors.webp" alt="" />
-          </button>
-          <button class="button-sc" id="paper">
-            <img src="paper.webp" alt="" />
-          </button>
-        </div>
 
-        <p id="stscResult"></p>
-        <p id="st-p">Рахунок</p>
-        <p id="ai-score">Комп’ютер - 0</p>
-        <p id="pl-score">Ви - 0</p>
-        <p id="stscP">Варіант комп’ютера</p>
+        <div style="display: flex">
+          <div
+            style="display: flex; flex-direction: column; align-items: center"
+          >
+            <p class="p-name">Камінь - ножиці - папір</p>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <button class="button-sc" id="stone">
+                <img src="stone.webp" alt="" />
+              </button>
+              <button class="button-sc" id="scissors">
+                <img src="scissors.webp" alt="" />
+              </button>
+              <button class="button-sc" id="paper">
+                <img src="paper.webp" alt="" />
+              </button>
+            </div>
+            <p style="margin-top: 36px" id="stscResult"></p>
+            <p id="stscP">Варіант комп’ютера</p>
+          </div>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              margin-left: 384px;
+              position: absolute;
+              height: 206px;
+            "
+          >
+            <p id="st-p">Рахунок:</p>
+            <p id="ai-score">Комп’ютер - 0</p>
+            <p id="pl-score">Ви - 0</p>
+          </div>
+        </div>
         <p>
           ------------------------------------------------------------------------------------------
         </p>

@@ -53,12 +53,18 @@ function stscGame() {
     (plChoice === 3 && aiChoice === 1)
   ) {
     stscResult.textContent = "Ви виграли раунд!";
+    stscResult.style.color = "#039900";
+    stscP.style.marginTop = "26px";
     plScoreCount++;
     plScore.textContent = `Ви - ${plScoreCount}`;
   } else if (plChoice === aiChoice) {
     stscResult.textContent = "Нічия!";
+    stscResult.style.color = "#000000";
+    stscP.style.marginTop = "26px";
   } else {
     stscResult.textContent = "Комп’ютер виграв раунд!";
+    stscResult.style.color = "#990000";
+    stscP.style.marginTop = "26px";
     aiScoreCount++;
     aiScore.textContent = `Комп’ютер - ${aiScoreCount}`;
   }
