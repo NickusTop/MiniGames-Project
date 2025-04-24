@@ -161,7 +161,7 @@
               </button>
             </div>
             <p style="margin-top: 36px" id="stscResult"></p>
-            <p id="stscP">Варіант комп’ютера</p>
+            <p style="margin-bottom: 36px" id="stscP">Варіант комп’ютера</p>
           </div>
           <div
             style="
@@ -178,19 +178,34 @@
             <p id="pl-score">Ви - 0</p>
           </div>
         </div>
-        <p>
-          ------------------------------------------------------------------------------------------
-        </p>
-        <h1 class="cal-p">Калькулятор</h1>
-        <input class="cal-in" placeholder="Введіть число" />
-        <button class="button-plus">+</button>
-        <button class="button-minus">-</button>
-        <button class="button-mno">*</button>
-        <button class="button-dil">/</button>
-        <input class="cal-in2" placeholder="Введіть число" />
-        <button class="button-res">=</button>
-        <p class="cal-result"></p>
-        <!-- //ffff -->
+        <div class="line"></div>
+        <h1 class="p-name">Калькулятор</h1>
+        <div style="display: flex; align-items: center; margin-bottom: 36px">
+          <input class="cal-in input-calc" placeholder="Введіть число" />
+          <div style="display: flex; flex-direction: column">
+            <button
+              style="margin-right: 10px; margin-bottom: 10px"
+              class="button-plus button-calc"
+            >
+              +
+            </button>
+            <button style="margin-right: 10px" class="button-minus button-calc">
+              -
+            </button>
+          </div>
+          <div
+            style="display: flex; flex-direction: column; margin-right: 38px"
+          >
+            <button style="margin-bottom: 10px" class="button-mno button-calc">
+              *
+            </button>
+            <button class="button-dil button-calc">/</button>
+          </div>
+          <input class="cal-in2 input-calc" placeholder="Введіть число" />
+          <button class="button-res">=</button>
+          <p class="cal-result">Результат</p>
+        </div>
+        <div class="line"></div>
         <h1>Калькулятор часу</h1>
         <input id="input-time" placeholder="ВВЕДИ ВЖЕ ТОЙ ЧАС" type="text" />
         <p id="p-time">0</p>
