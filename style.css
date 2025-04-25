@@ -224,6 +224,46 @@ a {
   align-items: center;
   justify-content: center;
 }
+.input-day {
+  background-color: #d7d7d7;
+  width: 135px;
+  height: 35px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 10px;
+  border: none;
+  outline: none;
+  color: #7e7e7e;
+  font-family: "Montserrat Alternates", sans-serif;
+  box-shadow: 3px 3px 0px #7e7e7e;
+}
+#input-time {
+  width: 95px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #7e7e7e;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 12px;
+}
+.input-time {
+  background-color: #d7d7d7;
+  width: 150px;
+  height: 35px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  box-shadow: 3px 3px 0px #7e7e7e;
+  margin-right: 33px;
+}
+.p-day {
+  font-size: 12px;
+  font-family: "Montserrat Alternates", sans-serif;
+  margin-left: 33px;
+}
 .switch {
   position: relative;
   overflow: hidden;
