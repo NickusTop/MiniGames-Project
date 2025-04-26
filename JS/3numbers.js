@@ -1,21 +1,21 @@
 const inp = document.getElementById("3n-input");
 const inp2 = document.getElementById("3n-input2");
 const inp3 = document.getElementById("3n-input3");
-const btn = document.getElementById("3n-button");
 const result = document.getElementById("3n-p");
 
-btn.addEventListener("click", btn3n);
+inp.addEventListener("input", checkAndCalculate);
+inp2.addEventListener("input", checkAndCalculate);
+inp3.addEventListener("input", checkAndCalculate);
 
-function btn3n() {
+function checkAndCalculate() {
   const num1 = parseInt(inp.value);
   const num2 = parseInt(inp2.value);
   const num3 = parseInt(inp3.value);
 
   if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
-    result.textContent = "Введіть, будь ласка, числа!";
+    result.textContent = "Введіть три числа!";
     return;
   }
-
   if (num1 === num2 && num2 === num3) {
     result.textContent = "Всі три числа однакові.";
   } else {
@@ -26,6 +26,6 @@ function btn3n() {
     if (num3 > naibilshe) {
       naibilshe = num3;
     }
-    result.textContent = `Найбільше число, яке ви ввели: ${naibilshe}.`;
+    result.textContent = `Найбільше число, яке ви ввели - ${naibilshe}`;
   }
 }
