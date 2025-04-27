@@ -281,73 +281,111 @@
             type="text"
           />
         </div>
-        <p class="p-3n" id="3n-p">Введіть всі чилса!</p>
+        <p class="p-3n" id="3n-p">Введіть три чилса!</p>
         <div class="line"></div>
+        <p class="p-stu">Інформація!</p>
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
+            <div class="swiper-slide">
+              <div class="container-swiper">
+                <img src="like.png" alt="" />
+              </div>
+              <p class="name-stu">Шуліков Микита</p>
+              <p class="name-stu">Проект цікавий та стильований!</p>
+            </div>
+            <div class="swiper-slide">
+              <div class="container-swiper">
+                <img src="clock.png" alt="" />
+              </div>
+              <p class="name-stu">Час виконання</p>
+              <p class="name-stu">10-12 годин</p>
+            </div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next">
+            <svg
+              width="52"
+              height="102"
+              viewBox="0 0 52 102"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="svg-next"
+            >
+              <path d="M1 1L51 51L1 101" stroke="black" />
+            </svg>
+          </div>
+          <div class="swiper-button-prev">
+            <svg
+              width="52"
+              height="102"
+              viewBox="0 0 52 102"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="svg-prev"
+            >
+              <path d="M51 1L1 51L51 101" stroke="black" />
+            </svg>
+          </div>
           <div class="swiper-pagination"></div>
         </div>
         <p>
           ------------------------------------------------------------------------------------------
         </p>
-        <h1>Обери вченого/их</h1>
+        <p class="p-name">Обери вченого/их</p>
         <ul class="ul-sc" id="scientist-list"></ul>
-        <ul>
+        <ul class="main-scients">
+          <ul class="bett-scients">
+            <ul class="left-ul">
+              <li>
+                <button class="button-scient" id="scientist-question">
+                  Які вчені народилися в 19 ст.
+                </button>
+              </li>
+              <li>
+                <button class="button-scient" id="scientist-question2">
+                  Відсортувати вчених за алфавітом
+                </button>
+              </li>
+              <li>
+                <button class="button-scient" id="scientist-question3">
+                  Відсортувати вчених за кількістю прожитих років
+                </button>
+              </li>
+              <li>
+                <button class="button-scient" id="scientist-question4">
+                  Знайти вченого, який народився найпізніше
+                </button>
+              </li>
+            </ul>
+            <ul class="right-ul">
+              <li>
+                <button class="button-scient" id="scientist-question5">
+                  Знайти рік народження Albert Einstein
+                </button>
+              </li>
+              <li>
+                <button class="button-scient" id="scientist-question6">
+                  Знайти вчених, прізвища яких починаються на літеру “C”
+                </button>
+              </li>
+              <li>
+                <button class="button-scient" id="scientist-question7">
+                  Видалити всіх вчених, ім’я яких починається на “A”
+                </button>
+              </li>
+              <li>
+                <button
+                  style="width: 368px"
+                  class="button-scient"
+                  id="scientist-question8"
+                >
+                  Знайти вченого, який прожив найдовше і вченого, який прожив
+                  найменше
+                </button>
+              </li>
+            </ul>
+          </ul>
           <li>
-            <button id="scientist-question">
-              Які вчені народилися в 19 ст.
-            </button>
-          </li>
-          <li>
-            <button id="scientist-question2">
-              Відсортувати вчених за алфавітом
-            </button>
-          </li>
-          <li>
-            <button id="scientist-question3">
-              Відсортувати вчених за кількістю прожитих років
-            </button>
-          </li>
-          <li>
-            <button id="scientist-question4">
-              Знайти вченого, який народився найпізніше
-            </button>
-          </li>
-          <li>
-            <button id="scientist-question5">
-              Знайти рік народження Albert Einstein
-            </button>
-          </li>
-          <li>
-            <button id="scientist-question6">
-              Знайти вчених, прізвища яких починаються на літеру “C”
-            </button>
-          </li>
-          <li>
-            <button id="scientist-question7">
-              Видалити всіх вчених, ім’я яких починається на “A”
-            </button>
-          </li>
-          <li>
-            <button id="scientist-question8">
-              Знайти вченого, який прожив найдовше і вченого, який прожив
-              найменше
-            </button>
-          </li>
-          <li>
-            <button id="scientist-question9">
+            <button class="button-scient" id="scientist-question9">
               Знайти вчених, в яких співпадають перші літери імені і прізвища
             </button>
           </li>

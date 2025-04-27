@@ -163,7 +163,7 @@ function showScientists(scientists) {
   scientists.forEach((scientist) => {
     const li = document.createElement("li");
     li.className = "list-group-item";
-    li.textContent = `${scientist.name} ${scientist.surname}: (Народився) - ${scientist.born} (Помер) - ${scientist.dead}`;
+    li.textContent = `${scientist.name} ${scientist.surname}: (Народився/лася) - ${scientist.born} (Помер/ла) - ${scientist.dead}`;
     list.appendChild(li);
   });
 }

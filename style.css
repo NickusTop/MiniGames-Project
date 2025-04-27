@@ -47,12 +47,16 @@ a {
   height: 100px;
   display: flex;
   justify-content: space-between;
+  font-size: 12px;
   align-items: center;
   padding: 10px 20px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 20px;
   margin-bottom: 10px;
   background-color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #pole {
   display: flex;
@@ -482,23 +486,33 @@ a {
   border: 0.08rem solid #dee2c6;
 }
 .swiper {
-  width: 600px;
-  height: 400px;
+  width: 900px;
+  height: 300px !important;
+  min-height: 320px !important;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  min-height: 400px; /* додано для контролю висоти */
+  min-height: 400px;
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
+  height: 300px !important;
+
   background: #fff;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+.swiper-slide-active {
+  display: flex;
+  justify-items: center;
+  align-content: center;
+  flex-direction: column;
 }
 
 .swiper-slide img {
@@ -506,4 +520,94 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.swiper-button-next {
+  width: 50px !important;
+  height: 100px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: var(--swiper-navigation-top-offset, 40%) !important;
+}
+.swiper-button-next::after {
+  display: none;
+}
+.svg-next {
+  width: 100%;
+  height: 100%;
+}
+.swiper-button-prev {
+  width: 50px !important;
+  height: 100px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: var(--swiper-navigation-top-offset, 40%) !important;
+}
+.swiper-button-prev::after {
+  display: none;
+}
+.svg-prev {
+  width: 100%;
+  height: 100%;
+  margin-right: -20px;
+}
+.container-swiper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+}
+.name-stu {
+  font-size: 14px;
+  color: #000000;
+  margin-top: 30px;
+}
+.p-stu {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 36px;
+}
+.swiper-pagination-bullet {
+  width: 18px !important;
+  height: 3px !important;
+  border-radius: 20px !important;
+  background: #7e7e7e !important;
+}
+.button-scient {
+  font-size: 12px;
+  font-family: "Montserrat Alternates", sans-serif;
+  background-color: #000000;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-items: start;
+  align-items: center;
+  box-shadow: 3px 3px 0px #7e7e7e;
+  margin-top: 20px;
+}
+.button-scient:hover {
+  cursor: pointer;
+}
+.main-scients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bett-scients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left-ul {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-right: 36px;
 }
