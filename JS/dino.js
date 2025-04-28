@@ -11,13 +11,18 @@ let gameStarted = false;
 document.addEventListener("keydown", handleStartAndJump);
 
 function handleStartAndJump(event) {
-  event.preventDefault();
-  if (event.code === "Space" && !gameStarted) {
-    gameStarted = true;
-    startGame();
-  } else if (event.code === "Space" && !isJumping) {
-    isJumping = true;
-    jump();
+  if (event.target.tagName !== "INPUT" && event.target.tagName !== "TEXTAREA") {
+    if (event.code === "Space") {
+      event.preventDefault();
+    }
+
+    if (event.code === "Space" && !gameStarted) {
+      gameStarted = true;
+      startGame();
+    } else if (event.code === "Space" && !isJumping) {
+      isJumping = true;
+      jump();
+    }
   }
 }
 

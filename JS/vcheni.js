@@ -159,10 +159,17 @@ function btnScientist9() {
 function showScientists(scientists) {
   const list = document.getElementById("scientist-list");
   list.innerHTML = "";
-
+  const carentTheme = localStorage.getItem("theme");
   scientists.forEach((scientist) => {
     const li = document.createElement("li");
     li.className = "list-group-item";
+    if (carentTheme === "dark") {
+      li.style.backgroundColor = "#ffffff";
+      li.style.color = "#000000";
+    } else if (carentTheme === "light") {
+      li.style.backgroundColor = "#d9d9d9";
+      li.style.color = "#000000";
+    }
     li.textContent = `${scientist.name} ${scientist.surname}: (Народився/лася) - ${scientist.born} (Помер/ла) - ${scientist.dead}`;
     list.appendChild(li);
   });

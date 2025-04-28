@@ -62,7 +62,7 @@
       </div>
     </header>
     <main>
-      <div class="div-main">
+      <div id="divmain" class="div-main">
         <h1 class="name-section">Популярні інетрактивні ігри</h1>
         <div class="line"></div>
         <p class="p-name">Перевір в який рік ти народився</p>
@@ -76,25 +76,7 @@
             />
             <div style="width: 100%; display: flex; justify-content: end">
               <button class="buttons" id="buttonInput">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                >
-                  <circle
-                    cx="6.52174"
-                    cy="6.52174"
-                    r="5.52174"
-                    stroke="white"
-                    stroke-width="2"
-                  />
-                  <path
-                    d="M14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L14.2929 15.7071ZM11.468 10.0538L10.7609 9.34665L9.34666 10.7609L10.0538 11.468L11.468 10.0538ZM15.7071 14.2929L11.468 10.0538L10.0538 11.468L14.2929 15.7071L15.7071 14.2929Z"
-                    fill="white"
-                  />
-                </svg>
+                <img class="search" src="IMGS/search.png" alt="">
               </button>
             </div>
           </div>
@@ -112,25 +94,7 @@
             />
             <div style="width: 100%; display: flex; justify-content: end">
               <button class="buttons" id="guessButton">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                >
-                  <circle
-                    cx="6.52174"
-                    cy="6.52174"
-                    r="5.52174"
-                    stroke="white"
-                    stroke-width="2"
-                  />
-                  <path
-                    d="M14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L14.2929 15.7071ZM11.468 10.0538L10.7609 9.34665L9.34666 10.7609L10.0538 11.468L11.468 10.0538ZM15.7071 14.2929L11.468 10.0538L10.0538 11.468L14.2929 15.7071L15.7071 14.2929Z"
-                    fill="white"
-                  />
-                </svg>
+               <img class="search" src="IMGS/search.png" alt="">
               </button>
             </div>
           </div>
@@ -151,13 +115,13 @@
               "
             >
               <button class="button-sc" id="stone">
-                <img src="IMGS/stone.webp" alt="" />
+                <img class="img-calc" src="IMGS/stone.webp" alt="" />
               </button>
-              <button class="button-sc" id="scissors">
-                <img src="IMGS/scissors.webp" alt="" />
+              <button  class="button-sc" id="scissors">
+                <img class="img-calc2" src="IMGS/scissors.webp" alt="" />
               </button>
               <button class="button-sc" id="paper">
-                <img src="IMGS/paper.webp" alt="" />
+                <img class="img-calc3" src="IMGS/paper.webp" alt="" />
               </button>
             </div>
             <p style="margin-top: 36px" id="stscResult"></p>
@@ -202,7 +166,7 @@
             <button class="button-dil button-calc">/</button>
           </div>
           <input class="cal-in2 input-calc" placeholder="Введіть число" />
-          <button class="button-res">=</button>
+          <button class="button-res button-calc">=</button>
           <p class="cal-result">Результат</p>
         </div>
         <div class="line"></div>
@@ -220,25 +184,7 @@
               <input type="text" id="input-time" placeholder="Введіть число" />
               <div style="width: 100%; display: flex; justify-content: end">
                 <button class="buttons">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                  >
-                    <circle
-                      cx="6.52174"
-                      cy="6.52174"
-                      r="5.52174"
-                      stroke="white"
-                      stroke-width="2"
-                    />
-                    <path
-                      d="M14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L14.2929 15.7071ZM11.468 10.0538L10.7609 9.34665L9.34666 10.7609L10.0538 11.468L11.468 10.0538ZM15.7071 14.2929L11.468 10.0538L10.0538 11.468L14.2929 15.7071L15.7071 14.2929Z"
-                      fill="white"
-                    />
-                  </svg>
+                  <img class="search" src="IMGS/search.png" alt="">
                 </button>
               </div>
             </div>
@@ -247,7 +193,7 @@
           </div>
         </div>
         <div class="line"></div>
-        <p class="p-name">Google динозавр</p>
+        <p class="p-name">Google риба</p>
         <div class="gameboard">
   <img src="IMGS/ryba.png" alt="" class="dinodino"></img>
   <img src="IMGS/udochka.png" alt="" class="cactus" ></img>
@@ -424,6 +370,7 @@
     <script type="module" src="JS/vcheni.js"></script>
     <script type="module" src="JS/ball.js"></script>
     <script type="module" src="JS/dino.js"></script>
+    <script type="module" src="JS/themes.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="JS/swiper.js"></script>
   </body>

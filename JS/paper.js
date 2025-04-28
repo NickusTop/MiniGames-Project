@@ -59,7 +59,7 @@ function stscGame() {
     plScore.textContent = `Ви - ${plScoreCount}`;
   } else if (plChoice === aiChoice) {
     stscResult.textContent = "Нічия!";
-    stscResult.style.color = "#000000";
+    stscResult.style.color = "gray";
     stscP.style.marginTop = "26px";
   } else {
     stscResult.textContent = "Комп’ютер виграв раунд!";
