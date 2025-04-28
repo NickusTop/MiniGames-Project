@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const pole = document.getElementById("pole");
   const buttonScientist = document.querySelectorAll(".button-scient");
   const swiperSlide = document.querySelectorAll(".swiper-slide");
-  const swiperNext = document.querySelector(".svg-next");
-  const swiperPrev = document.querySelector(".svg-prev");
+  const swiperNext = document.querySelector(".path-next");
+  const swiperPrev = document.querySelector(".path-prev");
 
   toogleTheme.addEventListener("change", changeTheme);
 
@@ -60,8 +60,8 @@ document.addEventListener("DOMContentLoaded", function () {
       swiperSlide.forEach((swiper) => {
         swiper.style.backgroundColor = "#000000";
       });
-      swiperNext.style.color = "#ffffff";
-      swiperPrev.style.color = "#ffffff";
+      swiperNext.style.stroke = "#ffffff";
+      swiperPrev.style.stroke = "#ffffff";
     } else if (isDarkMode === false) {
       document.body.style.backgroundColor = "#ffffff";
       document.body.style.color = "#000000";
@@ -98,8 +98,8 @@ document.addEventListener("DOMContentLoaded", function () {
       swiperSlide.forEach((swiper) => {
         swiper.style.backgroundColor = "#ffffff";
       });
-      swiperNext.style.color = "#000000";
-      swiperPrev.style.color = "#000000";
+      swiperNext.style.stroke = "#000000";
+      swiperPrev.style.stroke = "#000000";
     }
     // const theme = isDarkMode ? "dark" : "light";
     // document.documentElement.setAttribute("data-theme", theme);
