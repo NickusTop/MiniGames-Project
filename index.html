@@ -20,7 +20,7 @@
     <header>
       <div class="div-header">
         <a href="">
-          <img class="logo-header" src="logo.webp" alt="" />
+          <img class="logo-header" src="IMGS/logo.webp" alt="" />
         </a>
         <span class="span-header" style="display: flex; align-items: center">
           <a class="a-header" href="">Інтерактив</a>
@@ -151,13 +151,13 @@
               "
             >
               <button class="button-sc" id="stone">
-                <img src="stone.webp" alt="" />
+                <img src="IMGS/stone.webp" alt="" />
               </button>
               <button class="button-sc" id="scissors">
-                <img src="scissors.webp" alt="" />
+                <img src="IMGS/scissors.webp" alt="" />
               </button>
               <button class="button-sc" id="paper">
-                <img src="paper.webp" alt="" />
+                <img src="IMGS/paper.webp" alt="" />
               </button>
             </div>
             <p style="margin-top: 36px" id="stscResult"></p>
@@ -248,16 +248,15 @@
         </div>
         <div class="line"></div>
         <p class="p-name">Google динозавр</p>
-        <iframe
-          src="https://wayou.github.io/t-rex-runner/"
-          width="600"
-          height="200"
-          style="border: none"
-        ></iframe>
+        <div class="gameboard">
+  <img src="IMGS/ryba.png" alt="" class="dinodino"></img>
+  <img src="IMGS/udochka.png" alt="" class="cactus" ></img>
+</div>
+<p class="p-name">Натисніть клавішу Space щоб почати гру!</p>
         <div class="line"></div>
         <p class="p-name">Футбол</p>
         <div id="pole">
-          <img id="ball" src="ball.png" alt="" />
+          <img id="ball" src="IMGS/ball.png" alt="" />
         </div>
         <div class="line"></div>
         <p class="p-name">Введіть 3 числа</p>
@@ -288,14 +287,14 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="container-swiper">
-                <img src="like.png" alt="" />
+                <img src="IMGS/like.png" alt="" />
               </div>
               <p class="name-stu">Шуліков Микита</p>
               <p class="name-stu">Проект цікавий та стильований!</p>
             </div>
             <div class="swiper-slide">
               <div class="container-swiper">
-                <img src="clock.png" alt="" />
+                <img src="IMGS/clock.png" alt="" />
               </div>
               <p class="name-stu">Час виконання</p>
               <p class="name-stu">10-12 годин</p>
@@ -327,9 +326,7 @@
           </div>
           <div class="swiper-pagination"></div>
         </div>
-        <p>
-          ------------------------------------------------------------------------------------------
-        </p>
+        <div class="line"></div>
         <p class="p-name">Обери вченого/их</p>
         <ul class="ul-sc" id="scientist-list"></ul>
         <ul class="main-scients">
@@ -392,6 +389,32 @@
         </ul>
       </div>
     </main>
+    <footer>
+      <div class="div-footer">
+        <a href=""><img class="logo-footer" src="IMGS/logo-footer.png" alt="" /></a>
+        <ul style="margin-right: 187px">
+          <li class="li-footer">Тел: +38 (123) 456 78 90</li>
+          <li class="li-footer">E-Mail: codingmagic@gmail.com</li>
+          <li class="li-footer">Facebook: CodingMagic</li>
+          <li class="li-footer">Twitter: CodingMagic</li>
+          <li class="li-footer">Instagram: CodingMagic</li>
+        </ul>
+        <ul>
+          <ul style="display: flex">
+            <input
+              placeholder="Ваша ел. адреса..."
+              class="input-footer"
+              type="text"
+            />
+            <button class="button-footer">Підписатись</button>
+          </ul>
+          <p class="p-footer">
+            *Підписавшись, Ви зможете ортимувати інформаццію про новинки на
+            сайті
+          </p>
+        </ul>
+      </div>
+    </footer>
     <script type="module" src="JS/year.js"></script>
     <script type="module" src="JS/paper.js"></script>
     <script type="module" src="JS/calculator.js"></script>
@@ -400,6 +423,7 @@
     <script type="module" src="JS/3numbers.js"></script>
     <script type="module" src="JS/vcheni.js"></script>
     <script type="module" src="JS/ball.js"></script>
+    <script type="module" src="JS/dino.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="JS/swiper.js"></script>
   </body>
